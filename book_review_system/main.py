@@ -18,7 +18,7 @@ def submit_review(book_id: int, review: Review, background_tasks: BackgroundTask
         raise HTTPException(status_code=404, detail="Book not found")
     add_review_db(book_id, review)
     # Send confirmation email in the background
-    background_tasks.add_task(send_email, email="example@example.com", message="Your review has been submitted!")
+    background_tasks.add_task(send_email, email="mohitsharma@gmail.com", message="Your review has been submitted!")
     return {"message": "Review submitted successfully"}
 
 @app.get("/books/", response_model=List[Book])
