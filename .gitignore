@@ -1,0 +1,18 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Local development settings
+.env
+
+# SQLite database file
+*.db
+
+# IDE/Editor specific files
+.idea/
+.vscode/
+
+# Other generated files
+*.log
+*.pyc
